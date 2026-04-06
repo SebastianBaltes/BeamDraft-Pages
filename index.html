@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeamDraft | Precision AR Laser Projection</title>
+    <style>
+        :root {
+            --bg-color: #ffffff; /* Weißer Hintergrund passend zum Logo */
+            --text-color: #1e293b; /* Dunkles Schiefergrau für Text */
+            --accent-color: #22c55e; /* Laser-Grün */
+            --muted-text: #64748b; /* Helles Grau für Beschreibungen */
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            animation: fadeIn 1.2s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo {
+            max-width: 450px; /* Etwas größer, da der HTML-Text wegfällt */
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--muted-text);
+            margin-bottom: 4rem;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 0;
+            border-top: 1px solid #f1f5f9;
+            width: 100%;
+            font-size: 0.85rem;
+            color: var(--muted-text);
+        }
+
+        .license-box {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+            line-height: 1.5;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .license-box h2 {
+            font-size: 1rem;
+            color: #0f172a;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: rgba(34, 197, 94, 0.1);
+            color: #16a34a; /* Etwas dunkleres Grün für Lesbarkeit auf Weiß */
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            font-size: 0.75rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="badge">COMING SOON</div>
+
+    <img src="logo.png" alt="BeamDraft Logo" class="logo">
+
+    <h1>BeamDraft</h1>
+    <div class="tagline">The Future of Construction Layout</div>
+
+    <p class="description">
+        High-efficiency AR laser projection for interior construction. <br>
+        Precision meets digital workflow.
+    </p>
+
+    <div class="license-box">
+        <h2>Legal Notice & License</h2>
+        <p>&copy; 2026 <strong>Sebastian Leonardo Baltes</strong>, 41199 Mönchengladbach, Germany.</p>
+        <p><span class="highlight">All rights reserved.</span></p>
+        <p>This document, including all content, concepts, and technical descriptions, is protected by copyright. Any reproduction, distribution, public disclosure, or other use – in whole or in part – requires the prior written consent of the copyright holder.</p>
+        <p><strong>Confidential – not for distribution.</strong></p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 BeamDraft - Sebastian Leonardo Baltes.
+</footer>
+
+</body>
+</html>
